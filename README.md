@@ -12,11 +12,15 @@ PubMed Fetcher is a tool designed to help you retrieve and manage scientific art
 ## Installation
 
 To install PubMed Fetcher, clone the repository and install the required dependencies:
+step1 install poetry in your machine
+``` bash
+curl -sSL https://install.python-poetry.org | python3 -
+```
 
 ```bash
-git clone https://github.com/yourusername/pubmed_fetcher.git
+git https://github.com/dadiprasanth/pubmed_fetcher.git
 cd pubmed_fetcher
-pip install -r requirements.txt
+poetry install
 ```
 
 ## Usage
@@ -24,13 +28,16 @@ pip install -r requirements.txt
 To fetch articles from PubMed, use the following command:
 
 ```bash
-python fetcher.py --query "your search query"
+get-papers-list "your--search-query" -f filename.csv
+
 ```
 
 You can specify additional options such as the number of articles to fetch and the output format. For more details, use the `--help` flag:
 
 ```bash
-python fetcher.py --help
+get-papers-list --help
+get-papers-list -h
+
 ```
 
 ## Contributing
